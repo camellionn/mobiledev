@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ScreenSix(),
+      home: ScreenTwo(),
     );
   }
 }
@@ -22,12 +22,13 @@ class ScreenOne extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        "BingeFlix",
-        style: TextStyle(fontSize: 25),
-      ),
-    );
+    return AppBar(
+      backgroundColor: Colors.black,
+        title: const Text(
+          "BingeFlix",
+          style: TextStyle(fontSize: 25, color: Colors.red),
+        ),
+      );
   }
 }
 
@@ -37,16 +38,15 @@ class ScreenTwo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "BingeFlix",
-          style: TextStyle(fontSize: 25, color: Colors.red),
-        ),
+    return Scaffold (
+      body: Text(
+        "BingeFlix",
+        style: TextStyle(fontSize: 25),
       ),
     );
   }
 }
+
 
 //Screen 3 - Scaffold + Center
 class ScreenThree extends StatelessWidget {
@@ -74,8 +74,6 @@ class ScreenFour extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold (
       body: Container(
-        width: double.infinity,
-        height: double.infinity,
         color: Colors.teal,
         child: const Center(
           child: Text(
@@ -96,8 +94,6 @@ class ScreenFive extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold (
       body: Container(
-        width: double.infinity,
-        height: double.infinity,
         color: Colors.teal,
         child: const Center(
           child: Text(
